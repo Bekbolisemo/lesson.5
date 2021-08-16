@@ -8,7 +8,10 @@ public class Main {
         boss.setBossHealth(100);
         boss.setBossDefence("Kinetic");
         System.out.println("Boss Damage-" + boss.getBossDamage() + " " + "Boss Health-" + boss.getBossHealth() + " " + "Boss Defence-" + boss.getBossDefence());
+        for (int i = 0; i < createHeroes().length; i++) {
+            System.out.println(createHeroes()[i].getHeroesHealth() + " " + createHeroes()[i].getHeroesDamage() + " " + createHeroes()[i].getHeroesAttackType());
 
+        }
     }
 
     public static Hero[] createHeroes() {
